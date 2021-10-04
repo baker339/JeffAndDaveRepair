@@ -8,12 +8,23 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/dev": "^0.2.0",
+    "@react-navigation/native": "^6.0.4",
+    "@react-navigation/native-stack": "^6.2.2",
+    "emailjs-com": "^3.2.0",
     "expo": "~42.0.1",
+    "expo-font": "~9.2.1",
+    "expo-linear-gradient": "~9.2.0",
     "expo-status-bar": "~1.0.4",
+    "modal-enhanced-react-native-web": "^0.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-web": "~0.13.12",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "sweetalert2": "^11.1.7"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
