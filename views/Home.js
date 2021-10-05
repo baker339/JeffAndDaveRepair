@@ -36,14 +36,14 @@ const Home = ({ navigation }) => {
   return (
     <View style={styles.HomeContainer}>
       <View style={styles.Subcontainer}>
-        {showGears && (
+        {(showGears || !fontsLoaded) && (
           <Image
             source={require("../assets/gear2.gif")}
             style={{ width: 400, height: 400 }}
             resizeMode="contain"
           />
         )}
-        {!showGears && (
+        {!showGears && fontsLoaded && (
           <>
             <Image
               source={require("../assets/J&D.png")}
