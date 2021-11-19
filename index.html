@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon.ico"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <title>Jeff & Dave</title>
+
+    <script src="./navigation.js" defer></script>
+  </head>
+  <body class="home">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+      <div>
+        <a href="index.html">
+          <img
+            src="./assets/shared/J&DiconWhite.png"
+            alt="space tourism logo"
+            class="logo"
+          />
+        </a>
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators flex"
+        >
+          <li class="active">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="projects.html"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--home flow">
+      <div>
+        <!-- <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
+          <span class="d-block fs-900 ff-serif text-white">Jeff & Dave</span>
+          Maintenance & Repair Services
+        </h1> -->
+        <img
+          src="./assets/shared/J&Dlogobigwhite.png"
+          alt="Jeff And Dave logo"
+          class="large-logo"
+        />
+      </div>
+      <div>
+        <a
+          href="contact.html"
+          class="large-button uppercase ff-serif text-dark bg-white"
+          >Contact Us</a
+        >
+      </div>
+      <div class="testimonials">
+        <div>"Highly recommend Jeff & Dave Home Repair"</div>
+        <div>"...high quality work and reasonable prices..."</div>
+        <div>"Can't go wrong hiring these two honest guys."</div>
+      </div>
+    </main>
+  </body>
+</html>

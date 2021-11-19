@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.ico">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>Jeff & Dave</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+
+<body class="projects">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <a href="index.html">
+      <img
+        src="./assets/shared/J&DiconWhite.png"
+        alt="space tourism logo"
+        class="logo"
+      />
+    </a>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul
+        id="primary-navigation"
+        data-visible="false"
+        class="primary-navigation underline-indicators flex"
+      >
+        <li>
+          <a
+            class="ff-sans-cond uppercase text-white letter-spacing-2"
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="active">
+          <a
+            class="ff-sans-cond uppercase text-white letter-spacing-2"
+            href="projects.html"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            class="ff-sans-cond uppercase text-white letter-spacing-2"
+            href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--projects flow">
+    <h1 class="numbered-title">Projects</h1>
+    
+    <picture id="hammer-image">
+      <img src="assets/projects/hammer.png" alt="hammer and wrench" style="filter: invert(100%);">
+    </picture>
+    <picture hidden id="paintbrush-image">
+      <img src="assets/projects/paintbrush.png" alt="paintbrush" style="filter: invert(100%);">
+    </picture>
+    <picture hidden id="gear-image">
+      <img src="assets/projects/gear.png" alt="gear" style="filter: invert(100%);">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="projects list">
+      <button aria-selected="true" role="tab" aria-controls="maintenance-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="hammer-image">Maintenance</button>
+      <button aria-selected="false" role="tab" aria-controls="painting-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="paintbrush-image">Painting</button>
+      <button aria-selected="false" role="tab" aria-controls="misc-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="gear-image">Misc</button>
+  </div>
+
+    <!-- Maintenance -->
+    <article class="projects-info flow" id="maintenance-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-700 uppercase ff-serif">Maintenance</h2>
+
+      <div>
+        <p>Power Washing</p>
+        <p>Hedge Trimming</p>
+        <p>Changing Lightbulbs</p>
+        <p>Changing Alarm Batteries</p>
+        <p>& More...</p>
+      </div>
+      
+      <div class="projects-meta">
+        <a
+          href="./contact.html"
+          class="medium-button uppercase ff-serif text-dark bg-white"
+          >Contact</a
+        >
+      </div>
+    </article>
+    
+    <!-- Painting -->
+    <article hidden class="projects-info flow" id="painting-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-700 uppercase ff-serif">Painting</h2>
+
+      <div>
+        <p>Interior</p>
+        <p>Shutters</p>
+        <p>Lamp Posts</p>
+        <p>Mailboxes</p>
+        <p>& More...</p>
+      </div>
+      
+      <div class="projects-meta">
+        <a
+          href="./contact.html"
+          class="medium-button uppercase ff-serif text-dark bg-white"
+          >Contact</a
+        >
+      </div>
+    </article>
+    
+    <!-- Misc -->
+    <article hidden class="projects-info flow" id="misc-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-700 uppercase ff-serif">Misc</h2>
+
+      <div>
+        <p>Minor Carpentry</p>
+        <p>Minor Plumbing</p>
+        <p>Gutter Cleaning</p>
+        <p>Gutter Guard Installation</p>
+        <p>& More...</p>
+      </div>
+
+  <div class="projects-meta">
+    <a
+      href="./contact.html"
+      class="medium-button uppercase ff-serif text-dark bg-white"
+      >Contact</a
+    >
+  </div>
+    </article>
+    
+  </main>
+  
+<body>
+
+
+  
+</body>
+</html>
